@@ -1,45 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
-
-.App{
-    width: 50%;
-    height: 50vh;
-    border: 3px solid burlywood;
-    margin: auto;
-    margin-top: 8%;
-    background-color: antiquewhite;
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-button{
-    width:20vw;
-    height:5vh;
-    background-color: blueviolet;
-    margin-left: 30%;
-    border: none;
-    margin-top: 10px;
-    color: white;
-    font-size: 15px;
-    font-weight: 800;
+.navbar a:hover {
+  background-color: #000;
 }
 
-.reset{
-    margin-top: 10%;
+.active {
+  background-color: #04AA6D;
 }
 
-.score{
-    background-color: yellow;
-    margin-left: 25%;
-    width: 50%;
-    margin-top: 10px;
-    text-align: center;
+.navbar a img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+.navbar a:hover{
+    background-color: transparent;
 }
 
 span{
-    color: green;
-    font-size: 30px;
+    position: absolute;
+    left: 67%;
+    top: 1%;
+     color: yellow;
+     font-size: 18px;
+     font-weight: 800;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
