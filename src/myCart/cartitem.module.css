@@ -1,0 +1,23 @@
+.cartitem{
+    border: 2px solid black;;
+    width: 60%;
+    display: flex;
+justify-content: space-between;
+padding: 10px;
+border-radius: 5px;
+font-size: 15px;
+color: gray;
+font-weight: 900;
+margin: 20px;
+}
+.cartitemactions{
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid black; */
+}
+.actionicons{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 3px;
+}
