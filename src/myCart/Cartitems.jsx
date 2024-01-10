@@ -7,7 +7,7 @@ class Cartitems extends React.Component {
     }
 
     render() {
-        let { product, handleIncQty } = this.props;
+        let { product, handleIncQty ,handleDecQty,handleDel} = this.props;
         return (
             <>
                 <div className={ci.cartitem}>
@@ -23,10 +23,10 @@ class Cartitems extends React.Component {
                             <img
                                 src="https://cdn-icons-png.flaticon.com/128/4210/4210903.png" alt=""
                                 className={ci.actionicons}
-                                onClick={() => handleIncQty(product.title)}
+                                onClick={() => handleIncQty(product)}
                             />
-                            <img className={ci.actionicons} src="https://cdn-icons-png.flaticon.com/128/11519/11519974.png" alt="" />
-                            <img className={ci.actionicons} src="https://cdn-icons-png.flaticon.com/128/3221/3221897.png" alt="" />
+                            <img className={ci.actionicons} src="https://cdn-icons-png.flaticon.com/128/11519/11519974.png" alt=""  onClick={() =>handleDecQty(product)}/>
+                            <img className={ci.actionicons} src="https://cdn-icons-png.flaticon.com/128/3221/3221897.png" alt="" onClick={() =>handleDel(product.id)}/>
                         </div>
                     </div>
                 </div>

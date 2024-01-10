@@ -4,17 +4,19 @@ import Cartitems  from "./Cartitems"
 class Cart extends React.Component {
     constructor(props) {
         super(props)
-        console.log(props)
+   
     }
 
     render() {
-        let { products ,handleIncQty} = this.props
+        let { products ,handleIncQty,handleDecQty ,handleDel} = this.props
         return (
             <div className="cart">
                 {
                     products.map((product, index) => {
                        return <Cartitems key={index} product={product}
-                       handleIncQty={handleIncQty}/>
+                       handleIncQty={handleIncQty}
+                       handleDecQty={handleDecQty}
+                       handleDel={handleDel}/>
                     })
                 }
             </div>
