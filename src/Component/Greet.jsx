@@ -1,15 +1,11 @@
 import React from 'react'
 
-function Greet() {
+function Greet(props) {
   return (
     <div>
-        <h1 style={{color:"blue"}}>Hello ! First  functional Component</h1>
+{props.brand}
     </div>
   )
 }
 
 export default Greet
-
-
-
-

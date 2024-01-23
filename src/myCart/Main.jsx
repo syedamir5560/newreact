@@ -1,5 +1,6 @@
 import React from "react";
 import Cart from "./Cart";
+import Navbar from "./Navbar";
 
 class Main extends React.Component {
   constructor() {
@@ -55,18 +56,39 @@ class Main extends React.Component {
       return ele.id !== paraId
 
     })
-    console.log(newProduts)
+    this.setState({products:newProduts})
+  }
+
+
+  getCartCount(){
+    let {products}=this.state
+    let count = 0
+    products.forEach((ele)=>{
+      count +=ele.qty
+    })
+    return count
+  }
+
+  getCartTotal(){
+    let total = 0;
+    this.state.products.forEach((ele)=>{
+      
+       return total += ele.qty*ele.price
+    })
+    return total
   }
 
   render() {
     let { products } = this.state
     return (
       <div style={{ border: '2px solid red' }}>
-        <h1>Main</h1>
+        {/* <h1>Main</h1> */}
+        <Navbar getCartCount={this.getCartCount()}/>
         <Cart products={products}
           handleIncQty={this.handleIncQty}
           handleDecQty={this.handleDecQty}
           handleDel={this.handleDel} />
+          <h1>total={this.getCartTotal()}</h1>
       </div>
     )
   }

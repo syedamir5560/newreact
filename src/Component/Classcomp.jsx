@@ -1,20 +1,34 @@
-import React, { components } from 'react'
+import React from 'react'
+import Greet2 from './Greet2'
 
-class Classcomp extends React.Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            color: "red"
-        }
+function Classcomp() {
+  const products = [
+    { title: 'Cabbage', isFruit: false, id: 1 },
+    { title: 'Garlic', isFruit: false, id: 2 },
+    { title: 'Apple', isFruit: true, id: 3 },
+  ];
+  
+   
+    const listItems = products.map(product =>
+      <li
+        key={product.id}
+        style={{
+          color: product.isFruit ? 'magenta' : 'darkgreen'
+        }}
+      >
+        {product.title} 
+      </li>
+    );
+  
+    return (
+      <>
+      <Greet2 listItems={listItems} />
+      {/* <h1>list</h1>
+      <li>{listItems}</li> */}
+      </>
+    );
     }
-
-    render() {
-        return (
-            <div>
-                <h1>Class components {this.props.name}</h1>
-            </div>
-        )
-    }
-}
-export default Classcomp
+    
+  
+  export default Classcomp

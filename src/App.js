@@ -6,19 +6,26 @@ import Classcomp from "./Component/Classcomp";
 // import One from './props/One';
 import Main from "./myCart/Main";
 import Navbar from "./myCart/Navbar";
+import Main2 from "./useRef/Main2";
+import Main3 from "./conMulcon/Main3";
+import Main5 from "./formic/Main5";
 
 function App() {
   return (
     <div className="App">
       {/* <One/> */}
       {/* <Quiz/> */}
-      {/* <Greet/>
-    <Classcomp name="farari" /> */}
+       {/* <Greet/> */}
+    {/* <Classcomp  />  */}
 
       {/* <One/> */}
+      
+      {/* <Main /> */}
+      {/* <Main2/> */}
+      {/* <Main3/> */}
+      {/* <Main4/> */}
+      <Main5/>
 
-      <Navbar />
-      <Main />
     </div>
   );
 }
