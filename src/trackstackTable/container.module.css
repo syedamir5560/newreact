@@ -1,0 +1,22 @@
+.container{
+    display: inline-block;
+    margin:50px
+  }
+  
+.containera{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 22px;
+  }
+  
+  .containera:hover{
+    background-color: yellow;
+  }
+  
+  container a.active{
+    background-color: blue;
+  }

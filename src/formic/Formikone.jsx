@@ -17,7 +17,7 @@ function Formikone() {
             action.resetForm()
         }
     })
-    console.log(formikLib);
+        // console.log(formikLib);
 
     let { values, handleSubmit, handleChange, handleBlur, touched, errors } = formikLib
 

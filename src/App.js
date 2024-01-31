@@ -9,6 +9,12 @@ import Navbar from "./myCart/Navbar";
 import Main2 from "./useRef/Main2";
 import Main3 from "./conMulcon/Main3";
 import Main5 from "./formic/Main5";
+import Mainrout from "./routing/Mainrout";
+import Track from "./trackstackTable/Track";
+import Mainmemo from "./usememo/Mainmemo";
+import UseCallBack from "./usecallback/UseCallBack";
+// import Comp1 from "./UseContext/PropsDrilling/Comp1";
+import Comp1 from "./UseContext/Comp1";
 
 function App() {
   return (
@@ -24,7 +30,14 @@ function App() {
       {/* <Main2/> */}
       {/* <Main3/> */}
       {/* <Main4/> */}
-      <Main5/>
+      {/* <Main5/> */}
+      {/* <Mainrout/> */}
+      {/* <Track/>   */}
+      {/* <Mainmemo/> */}
+      {/* <UseCallBack/> */}
+
+      {/* <Comp1/> */}
+      <Comp1/>
 
     </div>
   );
